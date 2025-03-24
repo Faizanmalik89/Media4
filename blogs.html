@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Blogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html" class="active">Blogs</a>
+          <a href="videos.html">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html" class="active">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <!-- Tab Navigation -->
+    <div class="tab-navigation">
+      <button id="blogs-tab" class="tab-button active">Blogs</button>
+      <button id="videos-tab" class="tab-button">Videos</button>
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blogs-section" class="tab-content active">
+      <div class="page-header">
+        <h1>Latest Blogs</h1>
+        <p>Explore our collection of insightful articles on various topics</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- Blog Post 1 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="AI in Healthcare" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 15, 2023</span>
+              <span>Technology</span>
+            </div>
+            <h2 class="card-title">The Future of AI in Healthcare</h2>
+            <p class="card-text">Artificial intelligence is revolutionizing healthcare delivery across the globe. From diagnosis to treatment planning, AI algorithms are enhancing precision medicine approaches. Machine learning models can now predict patient outcomes with remarkable accuracy, while computer vision techniques are improving medical imaging analysis. This technological revolution promises to reduce costs, increase access to quality care, and ultimately save more lives through early detection and personalized treatment protocols.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Sustainable Travel" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 10, 2023</span>
+              <span>Travel</span>
+            </div>
+            <h2 class="card-title">Sustainable Travel: Exploring Without Harming</h2>
+            <p class="card-text">Sustainable travel is becoming increasingly important as we face climate change challenges. Conscious travelers are now seeking eco-friendly accommodations, supporting local communities, and choosing carbon-offset transportation options. By embracing responsible tourism practices, we can preserve natural habitats, protect wildlife, and ensure cultural heritage remains intact for future generations. The shift toward environmentally conscious travel doesn't mean sacrificing experiences—rather, it enhances them through authentic connections and purposeful exploration.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Plant-Based Diet" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 5, 2023</span>
+              <span>Health</span>
+            </div>
+            <h2 class="card-title">Benefits of a Plant-Based Diet</h2>
+            <p class="card-text">Plant-based diets continue to gain popularity due to their numerous health and environmental benefits. Research shows that consuming more fruits, vegetables, legumes, and whole grains can reduce the risk of heart disease, certain cancers, and type 2 diabetes. Additionally, plant-focused eating patterns typically result in lower carbon footprints compared to diets rich in animal products. The culinary world has embraced this shift, creating delicious plant-based alternatives that make transitioning to this lifestyle both enjoyable and sustainable.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Remote Work" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>April 28, 2023</span>
+              <span>Work</span>
+            </div>
+            <h2 class="card-title">The Evolution of Remote Work Culture</h2>
+            <p class="card-text">Remote work has transformed from a temporary pandemic solution to a permanent fixture in our professional landscape. Companies are redesigning their operational models to accommodate distributed teams, implementing digital collaboration tools, and developing new management approaches. This shift has democratized talent acquisition, allowing organizations to recruit globally while providing employees with improved work-life balance. However, challenges remain in fostering team cohesion, combating isolation, and maintaining productivity without constant supervision.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1517093728432-3cc74388edd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Digital Minimalism" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>April 22, 2023</span>
+              <span>Lifestyle</span>
+            </div>
+            <h2 class="card-title">Digital Minimalism: Finding Balance in a Connected World</h2>
+            <p class="card-text">Digital minimalism offers a thoughtful approach to technology use in our hyperconnected era. Practitioners intentionally curate their digital lives, eliminating non-essential apps and services while setting healthy boundaries around screen time. Studies show this deliberate relationship with technology can reduce anxiety, improve focus, and enhance real-world relationships. By questioning the value each digital tool brings to our lives, we can harness technology's benefits without becoming enslaved to the constant stream of notifications and information.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Continuous Learning" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>April 15, 2023</span>
+              <span>Education</span>
+            </div>
+            <h2 class="card-title">The Importance of Continuous Learning in 2023</h2>
+            <p class="card-text">Continuous learning has become essential in today's rapidly evolving professional landscape. With technological advancements transforming industries at unprecedented rates, workers must constantly update their skills to remain competitive. Online learning platforms, microlearning approaches, and employer-sponsored development programs are making education more accessible than ever. Those who cultivate a growth mindset and commit to lifelong learning will find themselves better positioned to adapt to changes, pursue new opportunities, and find fulfillment in both their careers and personal lives.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <nav class="pagination-list">
+          <div class="pagination-item">
+            <a href="#" class="pagination-link">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          </div>
+          <div class="pagination-item">
+            <a href="#" class="pagination-link active">1</a>
+          </div>
+          <div class="pagination-item">
+            <a href="#" class="pagination-link">2</a>
+          </div>
+          <div class="pagination-item">
+            <a href="#" class="pagination-link">3</a>
+          </div>
+          <div class="pagination-item">
+            <span class="pagination-link">...</span>
+          </div>
+          <div class="pagination-item">
+            <a href="#" class="pagination-link">8</a>
+          </div>
+          <div class="pagination-item">
+            <a href="#" class="pagination-link">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div id="videos-section" class="tab-content hidden">
+      <div class="page-header">
+        <h1>Latest Videos</h1>
+        <p>Watch our educational and informative videos on various topics</p>
+      </div>
+
+      <div class="card-grid">
+        <!-- Video 1 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Machine Learning Concepts">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 20, 2023</span>
+              <span>Technology</span>
+              <span>10:23</span>
+            </div>
+            <h2 class="card-title">Introduction to Machine Learning Concepts</h2>
+            <p class="card-text">This video introduces fundamental machine learning concepts, explaining supervised vs. unsupervised learning, regression vs. classification problems, and how algorithms learn from data. Perfect for beginners wanting to understand AI foundations.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Morning Habits">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 15, 2023</span>
+              <span>Health</span>
+              <span>15:47</span>
+            </div>
+            <h2 class="card-title">5 Morning Habits for Increased Productivity</h2>
+            <p class="card-text">Discover five science-backed morning habits that can dramatically improve your daily productivity and overall wellbeing. This video covers everything from mindfulness practices to nutrition tips that energize your body and mind for peak performance.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Overcoming Procrastination">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 10, 2023</span>
+              <span>Motivation</span>
+              <span>8:12</span>
+            </div>
+            <h2 class="card-title">Overcoming Procrastination Once and For All</h2>
+            <p class="card-text">This practical guide tackles the root causes of procrastination and provides actionable strategies to break the habit. Learn psychological techniques, time management methods, and digital tools that can help you take immediate action on important tasks.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Videos Button -->
+      <div class="text-center mt-8">
+        <a href="videos.html" class="bg-primary text-white px-6 py-2 rounded-md font-medium hover:bg-blue-600 transition">View All Videos</a>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

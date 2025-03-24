@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Videos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="videos.html" class="active">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Latest Videos</h1>
+      <p>Watch our educational and informative videos on various topics</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- Video 1 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Machine Learning Concepts">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>May 20, 2023</span>
+            <span>Technology</span>
+            <span>10:23</span>
+          </div>
+          <h2 class="card-title">Introduction to Machine Learning Concepts</h2>
+          <p class="card-text">This video introduces fundamental machine learning concepts, explaining supervised vs. unsupervised learning, regression vs. classification problems, and how algorithms learn from data. Perfect for beginners wanting to understand AI foundations.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Morning Habits">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>May 15, 2023</span>
+            <span>Health</span>
+            <span>15:47</span>
+          </div>
+          <h2 class="card-title">5 Morning Habits for Increased Productivity</h2>
+          <p class="card-text">Discover five science-backed morning habits that can dramatically improve your daily productivity and overall wellbeing. This video covers everything from mindfulness practices to nutrition tips that energize your body and mind for peak performance.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Overcoming Procrastination">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>May 10, 2023</span>
+            <span>Motivation</span>
+            <span>8:12</span>
+          </div>
+          <h2 class="card-title">Overcoming Procrastination Once and For All</h2>
+          <p class="card-text">This practical guide tackles the root causes of procrastination and provides actionable strategies to break the habit. Learn psychological techniques, time management methods, and digital tools that can help you take immediate action on important tasks.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/M7lc1UVf-VE/maxresdefault.jpg" alt="Investing Basics">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>May 5, 2023</span>
+            <span>Finance</span>
+            <span>12:38</span>
+          </div>
+          <h2 class="card-title">Investing Basics: Building Your First Portfolio</h2>
+          <p class="card-text">This beginner-friendly guide walks you through the essentials of building your first investment portfolio. Covering asset allocation, diversification principles, and risk management, you'll learn how to make informed investment decisions regardless of market conditions.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/PHe0bXAIuk0/maxresdefault.jpg" alt="Cooking Techniques">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>April 28, 2023</span>
+            <span>Cooking</span>
+            <span>18:21</span>
+          </div>
+          <h2 class="card-title">5 Essential Cooking Techniques Every Home Chef Should Master</h2>
+          <p class="card-text">This culinary tutorial demonstrates five fundamental cooking techniques that form the foundation of countless recipes. From proper knife skills to mastering heat control, these essential methods will transform your home cooking and give you the confidence to experiment in the kitchen.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/hMk8YWV7ahk/maxresdefault.jpg" alt="Digital Note-Taking">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>April 22, 2023</span>
+            <span>Productivity</span>
+            <span>14:53</span>
+          </div>
+          <h2 class="card-title">Digital Note-Taking Systems for Students and Professionals</h2>
+          <p class="card-text">Discover efficient digital note-taking methodologies that enhance retention and organization. This comprehensive guide covers popular note-taking apps, effective structure techniques, and integration methods with other productivity tools to create a seamless knowledge management system.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Video 7 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/fHfhorJnAEI/maxresdefault.jpg" alt="Personal Growth">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>April 18, 2023</span>
+            <span>Personal Development</span>
+            <span>11:42</span>
+          </div>
+          <h2 class="card-title">The Science of Building Lasting Habits</h2>
+          <p class="card-text">Understanding the psychology behind habit formation is crucial for personal growth. This video explores the neurological mechanisms of habit loops, implementation intentions, and environmental design principles that make habits stick. Learn research-backed strategies to break bad habits and establish positive routines that align with your long-term goals and values.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Video 8 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/8SGtO0kHTRc/maxresdefault.jpg" alt="Creative Writing">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>April 12, 2023</span>
+            <span>Writing</span>
+            <span>16:35</span>
+          </div>
+          <h2 class="card-title">Creative Writing Techniques for Engaging Storytelling</h2>
+          <p class="card-text">Elevate your writing with these powerful storytelling techniques used by professional authors. From character development to narrative structure, this tutorial covers the essential elements that make stories resonate with readers. Learn how to craft compelling dialogue, create vivid settings, and develop plot twists that keep audiences invested throughout your story's journey.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Video 9 -->
+      <div class="card">
+        <div class="video-thumbnail">
+          <img src="https://img.youtube.com/vi/n1mdAPFq2Os/maxresdefault.jpg" alt="Cybersecurity">
+          <div class="video-play-overlay">
+            <div class="video-play-button">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span>April 5, 2023</span>
+            <span>Technology</span>
+            <span>13:19</span>
+          </div>
+          <h2 class="card-title">Cybersecurity Essentials for Everyday Digital Life</h2>
+          <p class="card-text">Protecting your digital identity has never been more important. This comprehensive guide explains password management, multi-factor authentication, secure browsing habits, and safe online shopping practices. Learn how to identify phishing attempts and social engineering tactics while implementing practical security measures that protect your sensitive information from increasingly sophisticated cyber threats.</p>
+          <a href="video-details.html" class="card-link">
+            Watch Full Video
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <nav class="pagination-list">
+        <div class="pagination-item">
+          <a href="#" class="pagination-link">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </div>
+        <div class="pagination-item">
+          <a href="#" class="pagination-link active">1</a>
+        </div>
+        <div class="pagination-item">
+          <a href="#" class="pagination-link">2</a>
+        </div>
+        <div class="pagination-item">
+          <a href="#" class="pagination-link">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

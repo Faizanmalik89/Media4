@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="videos.html">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Contact Us</h1>
+      <p>Get in touch with the Knowledge Hub team</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Information -->
+      <div class="contact-info">
+        <h2 class="contact-info-title">Contact Information</h2>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="contact-info-item-content">
+            <h3>Our Location</h3>
+            <p>123 Knowledge Street, Learning City, ED 12345</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-envelope"></i>
+          <div class="contact-info-item-content">
+            <h3>Email Us</h3>
+            <p>info@knowledgehub.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div class="contact-info-item-content">
+            <h3>Call Us</h3>
+            <p>+1 (123) 456-7890</p>
+          </div>
+        </div>
+        
+        <div class="contact-info-item">
+          <i class="fas fa-clock"></i>
+          <div class="contact-info-item-content">
+            <h3>Business Hours</h3>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            <p>Saturday - Sunday: Closed</p>
+          </div>
+        </div>
+        
+        <div class="mt-8">
+          <h3 class="mb-4">Follow Us</h3>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2 class="contact-form-title">Send Us a Message</h2>
+        
+        <form>
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" class="form-input" placeholder="How can we help you?">
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+          </div>
+          
+          <button type="submit" class="form-button">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

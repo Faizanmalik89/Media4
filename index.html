@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="videos.html">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="bg-gray-50 py-4">
+    <div class="container">
+      <div class="text-center py-4">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Knowledge Hub</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">Your source for insightful blogs and educational videos on various topics including technology, health, productivity, and more.</p>
+        <div>
+          <a href="blogs.html" class="bg-primary text-white px-6 py-2 rounded-md font-medium mr-4 hover:bg-blue-600 transition">Browse Blogs</a>
+          <a href="videos.html" class="bg-white text-primary border border-primary px-6 py-2 rounded-md font-medium hover:bg-gray-50 transition">Watch Videos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <!-- Featured Blogs Section -->
+    <section class="mb-16">
+      <div class="page-header">
+        <h2 class="text-2xl font-bold">Featured Blogs</h2>
+        <p>Handpicked articles for you to read</p>
+      </div>
+      
+      <div class="card-grid">
+        <!-- Blog Post 1 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="AI in Healthcare" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 15, 2023</span>
+              <span>Technology</span>
+            </div>
+            <h3 class="card-title">The Future of AI in Healthcare</h3>
+            <p class="card-text">Artificial intelligence is revolutionizing healthcare delivery across the globe. From diagnosis to treatment planning, AI algorithms are enhancing precision medicine approaches.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 2 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Sustainable Travel" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 10, 2023</span>
+              <span>Travel</span>
+            </div>
+            <h3 class="card-title">Sustainable Travel: Exploring Without Harming</h3>
+            <p class="card-text">Sustainable travel is becoming increasingly important as we face climate change challenges. Conscious travelers are now seeking eco-friendly accommodations.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog Post 3 -->
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&h=500&q=80" alt="Plant-Based Diet" class="card-image">
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 5, 2023</span>
+              <span>Health</span>
+            </div>
+            <h3 class="card-title">Benefits of a Plant-Based Diet</h3>
+            <p class="card-text">Plant-based diets continue to gain popularity due to their numerous health and environmental benefits. Research shows that consuming more fruits, vegetables, and legumes can reduce disease risk.</p>
+            <a href="blog-details.html" class="card-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="blogs.html" class="bg-white text-primary border border-primary px-6 py-2 rounded-md font-medium hover:bg-gray-50 transition">View All Blogs</a>
+      </div>
+    </section>
+    
+    <!-- Featured Videos Section -->
+    <section class="mb-16">
+      <div class="page-header">
+        <h2 class="text-2xl font-bold">Featured Videos</h2>
+        <p>Educational and informative videos on various topics</p>
+      </div>
+      
+      <div class="card-grid">
+        <!-- Video 1 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Machine Learning Concepts">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 20, 2023</span>
+              <span>Technology</span>
+              <span>10:23</span>
+            </div>
+            <h3 class="card-title">Introduction to Machine Learning Concepts</h3>
+            <p class="card-text">This video introduces fundamental machine learning concepts, explaining supervised vs. unsupervised learning.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Morning Habits">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 15, 2023</span>
+              <span>Health</span>
+              <span>15:47</span>
+            </div>
+            <h3 class="card-title">5 Morning Habits for Increased Productivity</h3>
+            <p class="card-text">Discover five science-backed morning habits that can dramatically improve your daily productivity and overall wellbeing.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Overcoming Procrastination">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>May 10, 2023</span>
+              <span>Motivation</span>
+              <span>8:12</span>
+            </div>
+            <h3 class="card-title">Overcoming Procrastination Once and For All</h3>
+            <p class="card-text">This practical guide tackles the root causes of procrastination and provides actionable strategies to break the habit.</p>
+            <a href="video-details.html" class="card-link">
+              Watch Full Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="videos.html" class="bg-white text-primary border border-primary px-6 py-2 rounded-md font-medium hover:bg-gray-50 transition">View All Videos</a>
+      </div>
+    </section>
+    
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

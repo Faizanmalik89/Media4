@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Video Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="videos.html" class="active">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="video-detail">
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Introduction to Machine Learning Concepts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      
+      <div class="video-detail-meta">
+        <span>May 20, 2023</span>
+        <span>Technology</span>
+        <span>10:23</span>
+      </div>
+      
+      <h1 class="video-detail-title">Introduction to Machine Learning Concepts</h1>
+      
+      <div class="video-detail-description">
+        <p>This comprehensive tutorial introduces fundamental machine learning concepts, explaining supervised vs. unsupervised learning, regression vs. classification problems, and how algorithms learn from data. Perfect for beginners wanting to understand AI foundations.</p>
+        
+        <h2>What You'll Learn</h2>
+        <p>Machine learning is transforming industries across the globe, from healthcare and finance to transportation and entertainment. This introductory video breaks down the core concepts that form the foundation of this revolutionary technology. We explore the difference between supervised learning (where algorithms are trained on labeled data) and unsupervised learning (where algorithms discover patterns in unlabeled data).</p>
+        
+        <p>We also discuss the key distinction between regression problems (predicting continuous values) and classification problems (assigning categories), providing clear examples of each. The video explains how machine learning algorithms actually "learn" by adjusting their parameters based on training data, and how they can then make predictions on new, unseen data.</p>
+        
+        <h2>Key Concepts Covered</h2>
+        <ul>
+          <li>The fundamental types of machine learning: supervised, unsupervised, and reinforcement learning</li>
+          <li>How to distinguish between regression and classification problems</li>
+          <li>Common algorithms for different machine learning tasks</li>
+          <li>The training-validation-testing workflow</li>
+          <li>Overfitting, underfitting, and the bias-variance tradeoff</li>
+          <li>Practical applications of machine learning in various industries</li>
+        </ul>
+        
+        <h2>Who This Video Is For</h2>
+        <p>This tutorial is designed for absolute beginners who are curious about machine learning but may be intimidated by the technical jargon and mathematical concepts often associated with the field. No prior programming or statistical knowledge is required. The concepts are explained using clear, everyday analogies that make complex ideas accessible to everyone.</p>
+        
+        <p>Whether you're a student considering a career in data science, a professional looking to understand how AI might impact your industry, or simply someone interested in learning about cutting-edge technology, this video provides a solid foundation for further exploration of machine learning and artificial intelligence.</p>
+        
+        <h2>Additional Resources</h2>
+        <p>To continue your learning journey after watching this video, we recommend exploring some of the following resources:</p>
+        <ul>
+          <li>Our follow-up video: "Building Your First Machine Learning Model"</li>
+          <li>Interactive online courses on platforms like Coursera or edX</li>
+          <li>Practical tutorials using Python libraries such as scikit-learn</li>
+          <li>Books such as "Hands-On Machine Learning with Scikit-Learn and TensorFlow" by Aurélien Géron</li>
+        </ul>
+        
+        <p>Remember that machine learning is a vast and rapidly evolving field. This introductory video is just the beginning of what could be an exciting journey into the world of artificial intelligence and data science.</p>
+      </div>
+      
+      <!-- Related Videos Section -->
+      <div class="mt-16">
+        <h2 class="text-2xl font-bold mb-4">Related Videos</h2>
+        
+        <div class="card-grid">
+          <!-- Related Video 1 -->
+          <div class="card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/M7lc1UVf-VE/maxresdefault.jpg" alt="Investing Basics">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span>May 5, 2023</span>
+                <span>Finance</span>
+                <span>12:38</span>
+              </div>
+              <h3 class="card-title">Investing Basics: Building Your First Portfolio</h3>
+              <p class="card-text">This beginner-friendly guide walks you through the essentials of building your first investment portfolio.</p>
+              <a href="video-details.html" class="card-link">
+                Watch Full Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Video 2 -->
+          <div class="card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/n1mdAPFq2Os/maxresdefault.jpg" alt="Cybersecurity Essentials">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span>April 5, 2023</span>
+                <span>Technology</span>
+                <span>13:19</span>
+              </div>
+              <h3 class="card-title">Cybersecurity Essentials for Everyday Digital Life</h3>
+              <p class="card-text">Protecting your digital identity has never been more important. This comprehensive guide explains password management and security practices.</p>
+              <a href="video-details.html" class="card-link">
+                Watch Full Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Video 3 -->
+          <div class="card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/fHfhorJnAEI/maxresdefault.jpg" alt="Building Lasting Habits">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span>April 18, 2023</span>
+                <span>Personal Development</span>
+                <span>11:42</span>
+              </div>
+              <h3 class="card-title">The Science of Building Lasting Habits</h3>
+              <p class="card-text">Understanding the psychology behind habit formation is crucial for personal growth. This video explores the neurological mechanisms of habit loops.</p>
+              <a href="video-details.html" class="card-link">
+                Watch Full Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

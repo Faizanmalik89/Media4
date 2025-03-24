@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - Blog Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html" class="active">Blogs</a>
+          <a href="videos.html">Videos</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html" class="active">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="blog-detail">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=600&q=80" alt="The Future of AI in Healthcare" class="blog-detail-image">
+      
+      <div class="blog-detail-meta">
+        <span>May 15, 2023</span>
+        <span>Technology</span>
+        <span>5 min read</span>
+      </div>
+      
+      <h1 class="blog-detail-title">The Future of AI in Healthcare</h1>
+      
+      <div class="blog-detail-content">
+        <p>Artificial intelligence is revolutionizing healthcare delivery across the globe. From diagnosis to treatment planning, AI algorithms are enhancing precision medicine approaches. Machine learning models can now predict patient outcomes with remarkable accuracy, while computer vision techniques are improving medical imaging analysis. This technological revolution promises to reduce costs, increase access to quality care, and ultimately save more lives through early detection and personalized treatment protocols.</p>
+        
+        <h2>Transforming Diagnosis</h2>
+        <p>One of the most promising applications of AI in healthcare is in the field of diagnostics. AI systems can analyze medical images such as X-rays, CT scans, and MRIs with a level of detail that sometimes surpasses human capabilities. These systems can identify subtle patterns and anomalies that might be missed by even experienced radiologists, leading to earlier detection of conditions like cancer, cardiovascular disease, and neurological disorders.</p>
+        
+        <p>For example, deep learning algorithms have demonstrated the ability to detect diabetic retinopathy, a leading cause of blindness, with over 90% accuracy. Similarly, AI tools are being used to analyze pathology slides, identifying cancerous cells with precision that rivals or exceeds that of pathologists, while significantly reducing the time required for analysis.</p>
+        
+        <h2>Personalized Treatment Plans</h2>
+        <p>Beyond diagnosis, AI is enabling a new era of personalized medicine. By analyzing vast amounts of patient data—including genetic information, medical history, lifestyle factors, and treatment outcomes—AI systems can recommend tailored treatment plans that are optimized for individual patients.</p>
+        
+        <p>In oncology, AI algorithms are already helping physicians determine the most effective chemotherapy regimens based on a patient's specific cancer type and genetic profile. This personalized approach not only increases treatment efficacy but also reduces unnecessary side effects by avoiding treatments unlikely to benefit particular patients.</p>
+        
+        <h2>Challenges and Ethical Considerations</h2>
+        <p>Despite its promise, the integration of AI into healthcare faces significant challenges. Data privacy concerns, algorithm bias, regulatory hurdles, and questions about liability when AI systems make errors all need to be addressed. Additionally, there's the risk that overreliance on technology could erode the human connection that's fundamental to healthcare.</p>
+        
+        <p>Ethical frameworks must be established to ensure that AI in healthcare benefits all patients equitably, rather than exacerbating existing healthcare disparities. This includes addressing potential biases in the data used to train AI systems and ensuring that AI tools are accessible to underserved populations.</p>
+        
+        <h2>The Future Outlook</h2>
+        <p>Looking ahead, we can expect AI to become increasingly integrated into all aspects of healthcare. From virtual nursing assistants that monitor patients remotely to predictive models that forecast disease outbreaks, AI technologies will continue to transform how healthcare is delivered and experienced.</p>
+        
+        <p>As these systems evolve, the role of healthcare professionals will also change. Rather than being replaced by AI, doctors and nurses will likely work alongside these technologies, leveraging their capabilities to make better decisions and provide more personalized care to their patients.</p>
+        
+        <p>The future of AI in healthcare is not about machines replacing humans, but about creating a synergy between human expertise and artificial intelligence that elevates the standard of care for all patients.</p>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
